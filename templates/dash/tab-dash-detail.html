@@ -1,0 +1,160 @@
+<ion-view view-title="{{dashDetailData.name}}">
+  <ion-content>
+    <img ng-src="{{dashDetailData.img}}" class="full-image">
+    <div class="item" style="padding: 0px">
+      <div class="item item-divider item-icon-left">
+        <i class="icon kk_ico kk_ico2"></i>
+        计划概况
+      </div>
+      <div class="item item-text-wrap" style="padding: 0px">
+        <div class="item" >
+          会员人数
+          <span class="item-note" ng-bind="dashDetailData.peopleNum"></span>
+        </div>
+        <div class="item" >
+          互助金额
+          <span class="item-note" ng-bind="dashDetailData.mutualMoney"></span>
+        </div>
+        <div class="item" >
+          互助事件
+          <span class="item-note" ng-bind="dashDetailData.mutualEvent"></span>
+        </div>
+      </div>
+    </div>
+    <div class="item" style="padding: 0px">
+      <div class="item item-divider item-icon-left">
+        <i class="icon kk_ico kk_ico4"></i>
+        计划介绍
+      </div>
+      <div class="item item-text-wrap" style="padding: 0px">
+        <div class="item" >
+          面向人群
+        </div>
+        <div class="item"  ng-bind-html="dashDetailData.aboutPeople">
+          1. 拥有C1、C2及以上驾照 <br>
+          2. 非营利性驾驶7座(含7座)以下小型载客汽车<br>
+          3. 驾驶车辆已购买20万(含20万)以上商业三者险
+        </div>
+        <div class="item">
+          伤残/死亡
+          <span class="item-note" ng-bind="dashDetailData.dieMoney">30万</span>
+        </div>
+        <div class="item"  ng-bind-html="dashDetailData.dieAbout">
+          三者伤残或死亡：<br>
+          互助金额=（伤残赔偿金或死亡赔偿金）×交通事故责任占比-交强险-三者险。
+          最高30万元
+        </div>
+        <div class="item" >
+          豪车车损
+          <span class="item-note" ng-bind="dashDetailData.carMoney">50万元</span>
+        </div>
+        <div class="item" >
+          会员所驾驶车辆在事故中的责任为同责或次责时可进行互助<br>
+          三者豪车的车损：<br>
+          互助金额=第三者豪车车辆损失×交通事故责任占比-交强险-三者险。
+          最高50万元 <br>
+          豪车：<br>
+          新车购置价不低于人民币100万元。<br>
+        </div>
+        <div class="item">
+          生效时间
+          <span class="item-note" ng-bind="dashDetailData.time"></span>
+        </div>
+        <a class="item item-icon-right" href="#/tab/ruledetails">
+          详细规则
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="item" style="padding: 0px">
+      <div class="item item-divider item-icon-left">
+        <i class="icon kk_ico kk_ico6"></i>
+        夸克驾车风险规则
+      </div>
+      <div class="item item-text-wrap" style="padding: 0px">
+        <a class="item item-icon-right" href="#/tab/balanceDetail" >
+          加入金额
+          <span class="item-note">9元</span>
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" href="#/tab/balanceDetail" >
+          最低账户余额
+          <span class="item-note">3元</span>
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+        <a class="item item-icon-right" >
+          单笔最高捐助金额
+          <span class="item-note">3元</span>
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="item" style="padding: 0px">
+    <div class="item item-divider item-icon-left">
+      <i class="icon  kk_ico kk_ico3"></i>
+      理赔流程
+    </div>
+    <div class="item item-text-wrap" style="padding: 0px">
+      <a class="item" href="#/tab/processdetails">
+        加入计划 > 等待期 > 发生风险 > 申请互助 > 查勘案件 > 公示案件 > 钱款到账
+      </a>
+      <a class="item item-icon-right" href="tel:400-630-7088">
+        客户热线
+        <span class="item-note">400-630-7088 </span>
+        <i class="icon ion-ios-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+    <div class="item" style="padding: 0px">
+      <div class="item item-divider item-icon-left">
+        <i class="icon kk_ico kk_ico7"></i>
+        诚信监督
+      </div>
+      <div class="item item-text-wrap" style="padding: 0px">
+        <a class="item" >
+          若加入计划的夸克会员，被证明有故意骗取互助金的行为将会被永久退出夸克联盟，同时我们会将相关信息在网站及相关媒体进行公开，并保留追究法律责任的权利。
+        </a>
+      </div>
+    </div>
+    <div class="item" style="padding: 0px">
+      <div class="item item-divider item-icon-left">
+        <i class="icon kk_ico kk_ico8"></i>
+        媒体报道
+      </div>
+      <div class="item item-text-wrap" style="padding: 0px">
+        <div class="item" >
+          <a href="http://money.163.com/16/0108/11/BCQAB2A700253B0H.html">网络互助平台获资本青睐 真正回归人性本善？</a>
+          <p>
+            <a href="http://money.163.com/16/0108/11/BCQAB2A700253B0H.html" >网易新闻</a>
+            <a href="http://tech.hexun.com/2016-01-08/181693089.html">和讯网</a>
+            <a href="http://finance.huanqiu.com/zl/2016-01/8344124.html" >环球网</a>
+          </p>
+        </div>
+        <div class="item" >
+          <a href="http://finance.qq.com/a/20160121/065758.htm" >保保集：让每个人的幸福不再裸奔</a>
+          <p>
+            <a href="http://finance.qq.com/a/20160121/065758.htm" >腾讯财经</a>
+            <a href="http://money.163.com/16/0121/14/BDS0QDF000253B0H.html" >网易</a>
+            <a href="http://roll.sohu.com/20160122/n435473364.shtml" >搜狐</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="item" style="padding: 0px">
+      <div class="item item-divider item-icon-left">
+        <i class="icon kk_ico kk_ico9"></i>
+        其他夸克计划
+      </div>
+      <div class="item item-text-wrap" style="padding: 0px" ng-repeat="item in initData">
+        <a class="item item-icon-right" ng-click="goDashDetail($event,item)">
+          <span ng-bind="item.name"></span>
+          <i class="icon ion-ios-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar  style="padding: 0px;">
+      <a  style="width:50%;height:100%;background-color: #f60;text-align: center;color: #ffffff;line-height:45px;font-size: 24px " href="#/tab/dash">更多计划</a>
+      <a  style="width:50%;height:100%;background-color: #f6383a;text-align: center;color: #ffffff;line-height:45px;font-size: 24px " href="#">立即加入</a>
+  </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view view-title="网站内容">
+<ion-nav-buttons side="left">
+    <button class="button button-icon icon ion-ios-arrow-left"  ng-click="navButtonCloseClick()">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <h3 ng-bind="newsDetailData.title"></h3>
+    <div class="news-date f12 hui2">
+    <p>发布时间： <span ng-bind="newsDetailData.createdDate | date:'yyyy/MM/dd'"></span> 来源： <span ng-bind="newsDetailData.source"></span>   </p>
+    </div>
+    <hr>
+    <br>
+    <div class="news-date f12 hui2">
+    <p ng-bind-html="newsDetailData.content"></p>
+    </div>
+    <br>
+    <p><span ng-bind="'来源：' + newsDetailData.source"></span>  <span ng-bind="'链接：'+newsDetailData.sourceUrl"></span>   </p>
+
+
+  </ion-content>
+</ion-view>

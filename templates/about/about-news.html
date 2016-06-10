@@ -1,0 +1,15 @@
+<ion-view view-title="网站新闻">
+<ion-nav-buttons side="left">
+    <button class="button button-icon icon ion-ios-arrow-left" ng-click="navButtonCloseClick()">
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <a class="item item-icon-right" href="#/tab/news-detail/{{item.newsId}}" ng-repeat="item in initNewsDatas">
+        <h2 ng-bind="item.title"></h2>
+        <p>发布时间：{{item.createdDate | date:'yyyy/MM/dd'}}    来源：  {{item.source}}</p>
+          <i class="icon ion-ios-arrow-right"></i>
+      </a>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,42 @@
+<ion-modal-view style="background: rgba(0,0,0,.7);" >
+  <ion-content style="top: 50%;background: rgba(255,255,255,1);" >
+    <div class="item-balanced item-icon-right" style="margin: 20px;color: #6d6d72;">
+      充值金额
+      <span class="icon button-icon" style="height: 1rem;" ng-click="closeModal($event)">x</span>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="button button-outline  moneyButton" ng-click="changeMoney(9)" ng-class="checkId == 9?'cur':''" >
+          9元
+        </button>
+      </div>
+      <div class="col">
+        <button class="button button-outline  moneyButton" ng-click="changeMoney(30)" ng-class="checkId == 30?'cur':''" >
+         30元
+        </button>
+      </div>
+      <div class="col">
+        <button class="button button-outline  moneyButton" ng-click="changeMoney(50)" ng-class="checkId == 50?'cur':''">
+         50元
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button class="button button-outline  moneyButton" ng-click="changeMoney(100)" ng-class="checkId == 100?'cur':''" >
+          100元
+        </button>
+      </div>
+      <div class="col">
+        <button class="button button-outline  moneyButton" ng-click="changeMoney(300)" ng-class="checkId == 300?'cur':''" >
+         300元
+        </button>
+      </div>
+      <div class="col">
+        <input class="button button-outline  moneyButton" ng-click="changeMoney(0)" ng-class="checkId == 0?'cur':''" placeholder=" 其他金额" ng-model="monwyData.money">
+        </input>
+      </div>
+    </div>
+    <button class="button button-block button-assertive" style="width:96%;margin: 2%;" ng-click="clickEnter()">确定充值</button>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,67 @@
+<ion-view view-title="计划充值">
+  <ion-content style="background-color: #eee;">
+    <div class="row" style="padding: 0px">
+      <label class=" item item-input item-select col-60">
+        <div class="input-label" >
+          计划
+        </div>
+        <select>
+          <option>请选择</option>
+          <option>计划1</option>
+          <option>计划2</option>
+          <option>计划3</option>
+        </select>
+      </label>
+      <label class=" item item-input item-select col-40">
+        <div class="input-label ">
+          状态
+        </div>
+        <select>
+          <option>全部</option>
+          <option>待支付</option>
+          <option>正常</option>
+          <option>警示</option>
+          <option>不足</option>
+          <option>退出</option>
+        </select>
+      </label>
+    </div>
+    <div class="row" style="margin: 20px auto">
+      <div class="col-80">
+        <input class="joinUserInput" placeholder="查询申请互助人的姓名" type="text" value="">
+      </div>
+      <div class="col-20">
+        <button class="button" style="  background-color: #f60;  width: 4rem;  height: 2.1rem !important;  min-height: 0px !important;  margin-left: 0.5rem;">
+          <i class="icon ion-ios-search-strong" style="color: #fff"></i>
+        </button>
+      </div>
+    </div>
+    <div class="item item-checkbox" style="border: 0px;background-color: #eee;" ng-if="showCheckBox">
+      <label class="checkbox">
+        <input type="checkbox">
+      </label>
+      选择所有
+    </div>
+    <div class="item item-checkbox">
+      <label class="checkbox" ng-if="showCheckBox">
+        <input type="checkbox">
+      </label>
+      <div class="item item-icon-right" style="border: 0px solid #ffffff;  padding: 0px;" ng-click="clickItem()">
+        <h2>张利军<span style="color: green;font-size: 14px;margin-left: 10px">正常</span></h2>
+        <p>夸克1号中青年大病互助计划</p>
+        <p>余额：<span>9元</span></p>
+        <p>距离等待期结束还有 131天</p>
+        <i class="icon ion-ios-arrow-right" ></i>
+      </div>
+    </div>
+
+  </ion-content>
+  <div style="   position: absolute;  bottom: 0;  right: 0;  z-index: 11112 !important;  overflow: hidden;  width: 100%;" ng-show="showCheckBox">
+    <button class="button button-dark" style="width:50%;float: left;border-radius: 0" ng-click="clickFootCanel()">取消</button>
+    <button class="button button-assertive" style="width:50%;float: right;border-radius: 0" ng-click="clickFootEnter()">确定</button>
+  </div>
+  <ion-footer-bar class="bar-assertive" ng-click="clickFootButton()" ng-hide="showCheckBox">
+    <a class="title">充值</a>
+  </ion-footer-bar>
+</ion-view>
+

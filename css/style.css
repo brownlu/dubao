@@ -1,0 +1,275 @@
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:none;}
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  font-size: .85rem;
+  line-height: 1.5;
+  color: #3d4145;
+  background: #eee;
+  overflow: hidden;
+}
+.item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+   white-space: inherit;
+}
+.pce {
+  font-size: 1.4rem;
+  color: #e4191f;
+  width: 3.5rem;
+  height: 4rem;
+  position: absolute;
+  /* top: .6rem; */
+  right: 1.5rem;
+  /* left: 0; */
+  margin-top: -4rem;
+}
+/*icon*/
+.kk_ico{background:url("../img/kk_ico.png")/*tpa=http://m.baobaoji.cn/css/Images/kk_ico.png*/ no-repeat;}
+.kk_ico1,.kk_ico2,.kk_ico3,.kk_ico4,.kk_ico5,.kk_ico6,.kk_ico7,.kk_ico8,.kk_ico9,.kk_ico10,.kk_ico11,.kk_ico12{
+  background-size:cover;
+  width:1.5rem;
+  height:1.6rem;
+  position:relative;
+  display:inline-block;
+  vertical-align:middle;
+  top:8px !important;
+}
+.kk_ico1{background-position:0 0px}
+.kk_ico2{background-position:0 -2.65rem}
+.kk_ico3{background-position:0 -5.4rem}
+.kk_ico4{background-position:0 -8.1rem}
+.kk_ico5{background-position:0 -10.85rem}
+.kk_ico6{background-position:0 -13.55rem}
+.kk_ico7{background-position:0 -16.3rem}
+.kk_ico8{background-position:0 -19rem}
+.kk_ico9{background-position:0 -21.75rem}
+.kk_ico10{background-position:0 -24.6rem}
+.kk_ico11{background-position:0 -27.6rem}
+.kk_ico12{background-position:0 -30.65rem}
+/*规则详情*/
+.content-block {
+  margin: 1.75rem 0;
+  padding: 0 .75rem;
+  color: #6d6d72;
+}
+.content-inner {
+  box-sizing: border-box;
+  border-top: 1px solid transparent;
+  margin-top: -1px;
+  padding-bottom: .5rem;
+}
+/*账户余额*/
+.kk_act{
+  height:2rem;
+}
+.kk_act1, .kk_act2, .kk_act3 {
+  padding: .5rem .6rem;
+  margin: 0 .5rem;
+  top:8px !important;
+}
+.kk_act1, .kk_act2, .kk_act3 {
+  padding: 0 .6rem;
+  margin: 0 .2rem;
+  padding-top: .1rem;
+  color: #fff;
+  line-height: 1.1rem;
+  position: relative;
+  border-radius: .1rem;
+  font-size: .6rem;
+  font-style: normal;
+}
+.kk_act1{background:#1e9e49}
+.kk_act2{background:#f98700}
+.kk_act3{background:#ee3f3f}
+/*关于*/
+.about_banner {
+  background: #dd3939;
+  padding: 26px 30px;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.img_full {
+  width: 100%;
+}
+.about_ico{background:url("../img/about_ico.png") no-repeat;background-size:cover;margin-right:.6rem}
+.about_ico1,.about_ico2,.about_ico3,.about_ico4{top: 21px !important;width:1.5rem;height:1.5rem;position:relative;display:inline-block;vertical-align:middle}
+.about_ico1{background-position:0 0}
+.about_ico2{background-position:0 -2.25rem}
+.about_ico3{background-position:0 -4.55rem}
+.about_ico4{background-position:0 -6.8rem}
+/*登录*/
+.login_txt{
+  padding:10px
+}
+.pull-left {
+  float: left;
+}
+.mag {
+  color: #ee5b5b;
+}
+.pull-right {
+  float: right;
+}
+/*个人中心*/
+.item-inner {
+  display: block;
+  padding-top: .5rem;
+  padding-bottom: .45rem;
+  -webkit-align-self: stretch;
+  align-self: stretch;
+}
+.tabel_ico1, .tabel_ico2, .tabel_ico3, .tabel_ico5, .tabel_ico6,.tabel_ico7, .tabel_ico8, .tabel_ico9, .tabel_ico10, .tabel_ico11, .tabel_ico12, .tabel_ico13, .tabel_ico14 {
+  background-size: cover !important;
+  width: 2.25rem !important;
+  height: 2.4rem !important;
+  margin: 0 auto;
+  top:8px !important;
+}
+.tabel_ico {
+  background: url(../img/table_ico.png) no-repeat;
+}
+.tabel_ico1 {
+  background-position: .18rem 0;
+}
+.tabel_ico11 {
+  background-position: 0rem -34.2rem;
+}
+.tabel_ico2 {
+  background-position: 0.1rem -3.2rem;
+}
+.tabel_ico7 {
+  background-position: 0rem -20.1rem;
+}
+/*互助公示*/
+.pub_banner {
+  background: url(../img/pub_banner.jpg) no-repeat center;
+  width: 100%;
+  height: 12rem;
+  background-size: cover;
+  text-align: center;
+}
+.pub_bo{
+  color: #666
+}
+.pub_img {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.pub_img img {
+  width: 92%;
+  border: .1rem solid #ccc;
+  padding: .2rem;
+  margin: .5rem 0;
+}
+/*我的信息*/
+.l_ico {
+  background: url(../img/m_ico2@x2.png) no-repeat;
+}
+.l_ico1, .l_ico2, .l_ico3, .l_ico4, .l_ico9, .l_ico10 {
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+  width: 2rem;
+  height: 1.4rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.l_ico1 { background-position: 0 0; }
+.l_ico2 { background-position: 0 -2.45rem; }
+.l_ico3 { background-position: 0 -5.8rem; }
+.l_ico4 { background-position: 0 -9rem; }
+.l_ico9 { background-position: 0 -27.3rem  }
+/*互助申请*/
+.joinUserInput{
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  font-family: inherit;
+  color: #3d4145;
+  font-size: .7rem;
+  font-weight: 400;
+  padding: 0 .5rem;
+  background-color: #fff;
+  border: 1px solid #b4b4b4 !important;
+  margin: 0;
+  height: 1.4rem;
+}
+.joinUserButton{
+  color: #fff;
+  background-color: #f60;
+  background: #0894ec;
+  border: none;
+  line-height: 1.35rem;
+  width: 10.999999999999998%;
+  margin-left: 4%;
+  box-sizing: border-box;
+  float: left;
+}
+.cur{
+  border: 1px solid #dd3939 !important;
+  color: #dd3939 !important;
+}
+.moneyButton{
+  border: .1rem solid #ccc;
+  width: 100%;
+  padding: .4rem 0;
+  background: #fff;
+  height: 4.4rem;
+}
+/*计划详情-加入*/
+.parameter {
+  background-color: #dd3939;
+  padding: .8rem .5rem;
+  padding-bottom: 0px;
+  color: #fff;
+  position: relative;
+}
+/*账单*/
+ .b1_ico,  .b2_ico, .b3_ico {
+  width: 2rem;
+  height: 2.1rem !important;
+  left: .5rem;
+  position: absolute;
+  background: url(../img/bil_ico.png) no-repeat;
+  background-size: cover;
+   top: 1rem !important;
+}
+.b2_ico {
+  background-position: 0 -2.25rem;
+}
+.buttons-tab {
+  -webkit-align-self: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  background: #fff;
+  position: relative;
+  margin-bottom: .5rem;
+}
+.buttons-tab a{
+  border-radius: 0px !important;
+}
+.current{
+  color: #dd3939 !important;
+  /*border-color: #dd3939 !important;*/
+  border-bottom: 0.1rem solid  #dd3939 !important;
+}

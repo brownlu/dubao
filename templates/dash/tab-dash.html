@@ -1,0 +1,15 @@
+<ion-view view-title="夸克联盟">
+  <ion-content >
+    <ion-list>
+      <ion-item ng-repeat="item in initData" ng-click="goDashDetail($event,item)">
+        <img ng-src="{{item.img}}" class="full-image">
+        <div>
+          <h2 ng-bind="item.name"></h2>
+          <p ng-bind="item.p1"></p>
+          <p ng-bind="item.p2"></p>
+          <div class="pce"><span class="f12">￥</span><span ng-bind="item.money"></span></div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

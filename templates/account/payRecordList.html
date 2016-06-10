@@ -1,0 +1,25 @@
+<ion-view view-title="账单">
+  <ion-content style="background-color: #eee">
+    <div class="buttons-tab row">
+      <a  ng-class="slideIndex == 0?'button button-clear col current':'button button-clear col'"  ng-click="activeSlide(0)">全部</a>
+      <a  ng-class="slideIndex == 1?'button button-clear col current':'button button-clear col'"  ng-click="activeSlide(1)">支付</a>
+      <a  ng-class="slideIndex == 2?'button button-clear col current':'button button-clear col'"  ng-click="activeSlide(2)">扣款</a>
+    </div>
+    <div ng-show="slideIndex == 0">
+      <div class="list">
+        <div class="item item-icon-left" >
+          <i class="icon b2_ico"></i>
+          <div style="float: left">
+            <h2>加入</h2>
+            <p>2016/3/14</p>
+          </div>
+          <span class="item-note" style="color: green;  font-size: 1.5rem;">+9</span>
+        </div>
+      </div>
+    </div>
+    <!--//支付-->
+    <div ng-show="slideIndex == 1"></div>
+    <!--//扣款-->
+    <div ng-show="slideIndex == 2"></div>
+  </ion-content>
+</ion-view>

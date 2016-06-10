@@ -1,0 +1,32 @@
+.bg_fff {
+  background: #fff;
+}
+.content {
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  bottom: 2.8rem;
+  left: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.content-padded {
+  margin: .5rem;
+}
+.news-date {
+  margin-top: -.7rem;
+  font-size: .6rem;
+  color: #999;
+}
+.f12 {
+  font-size: .6rem !important;
+}
+.hui2 {
+  color: #999 !important;
+}
+.bo {
+  padding: .6rem 0;
+}
+.content-padded > h3, .content-padded > h4 {
+  margin: 1rem 0;
+}
